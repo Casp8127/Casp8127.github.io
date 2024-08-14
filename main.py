@@ -4,18 +4,19 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
-import config
+
 import text
 import keyboard
 import schedule_script
 import day_of_week_skript
 
 admin_chat = -1002182287942
+bot_token = "6381087353:AAHABLHLI-hpIX8qH3Qkd3dtIXvFwfFkw9A"
 
 class FeedbackState(StatesGroup):
     waiting_for_feedback = State()
 
-bot = Bot(token=config.bot_token)
+bot = Bot(token=bot_token)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 @dp.message_handler(commands=['start'])
