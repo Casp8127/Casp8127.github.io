@@ -8,20 +8,71 @@
 	<meta name="description" content="тестовая страница">
 	<meta name="keywords" content="test, coffee_shop">
 
-	<link rel="stylesheet" href="main.css">
-
 
 
     <title>main menu</title>
 
-</head>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
 
+        body {
+        color: var(--tg-theme-text-color);
+        background: var(--tg-theme-bg-color);
+        }
+
+        #main {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        }
+
+        h1 {
+        margin-top: 50px;
+        margin: 0 auto
+        }
+
+        img{
+        width: 70px;
+        margin: 30px auto;
+        }
+
+        p {
+        width: 350px;
+        margin: 0 auto;
+        }
+
+        button{
+        border: 0;
+        border-radius: 5px;
+        margin-top: 50px;
+        height: 60px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: 500px;
+        cursor: pointer;
+        transition: all 500ms ease;
+        color: var(--tg-theme-button-color);
+        background: var(--tg-theme-button-text-color);
+        }
+
+        button:hover {
+        background: var(--tg-theme-secondary-bg-color);
+        }
+    </style>
+</head>
 <body>
+    <div id="main">
+        <h1> кофейня соседи онлайн</h1>
+    </div>
 <header>
 
 </header>
 
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
 
 <script>
 	var WebApp = window.Telegram.WebApp;
@@ -29,6 +80,6 @@
 
 
 </script>
-
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
